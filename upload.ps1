@@ -10,4 +10,4 @@ $s3Bucket = "fyzical-superfeet"
 $s3Path = "$user"
 
 # Run the AWS S3 sync command to upload new files
-aws s3 sync $localDir s3://$s3Bucket/$date/$s3Path --exclude "updates/*" --exclude "*.log" --exclude "WebCache/*" --exclude "*.dmp"
+aws s3 cp $localDir s3://$s3Bucket/$date/$s3Path --exclude "updates/*" --exclude "*.log" --exclude "WebCache/*" --exclude "*.dmp" --recursive
