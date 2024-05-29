@@ -3,7 +3,7 @@ $date = Get-Date -Format "yyyy-MM-dd"
 $user = $env:username
 
 # Define your local directory and S3 bucket
-$localDir = "C:\Users\FYZICALOrem\footscan\gaitessentials9"
+$localDir = "C:\Users\$user\footscan\gaitessentials9"
 $s3Bucket = "fyzical-superfeet"
 
 # Define the S3 path with the current date
