@@ -12,7 +12,7 @@ username = os.getlogin()
 db_path = rf'C:\Users\{username}\footscan\gaitessentials9\footscan.sqlite'
 combined_csv_dir = rf'C:\Users\{username}\footscan\gaitessentials9\Converted'
 combined_csv_file = os.path.join(combined_csv_dir, 'Converted.csv')
-local_dir = rf'C:\Users\{username}\footscan\gaitessentials9'
+local_dir = rf'C:\Users\{username}\footscan\gaitessentials9\Converted'
 s3_bucket = "fyzical-superfeet"
 s3_path = f"{current_date}/{username}"
 
